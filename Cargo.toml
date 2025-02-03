@@ -7,7 +7,7 @@ authors = [
 ]
 description = "Session management for Actix Web"
 keywords = ["http", "web", "framework", "async", "session"]
-edition = 2021
+edition = "2021"
 
 [package.metadata.docs.rs]
 rustdoc-args = ["--cfg", "docsrs"]
