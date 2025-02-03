@@ -5,7 +5,7 @@ use derive_more::derive::Display;
 
 use super::SessionKey;
 
-pub(crate) type SessionState = HashMap<String, String>;
+pub type SessionState = HashMap<String, String>;
 
 /// The interface to retrieve and save the current session data from/to the chosen storage backend.
 ///
