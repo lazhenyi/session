@@ -1,12 +1,12 @@
 //! Pluggable storage backends for session state.
 
 #[cfg(feature = "cookie-session")]
-mod cookie;
-mod interface;
+pub mod cookie;
+pub mod interface;
 #[cfg(feature = "redis-session")]
-mod redis_rs;
-mod session_key;
-mod utils;
+pub mod redis_rs;
+pub mod session_key;
+pub mod utils;
 
 #[cfg(feature = "cookie-session")]
 pub use self::cookie::CookieSessionStore;
