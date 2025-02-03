@@ -35,7 +35,7 @@ tracing = { version = "0.1.30", default-features = false, features = ["log"] }
 
 # redis-session
 redis = { version = "0.28.2", default-features = false, features = ["tokio-comp", "connection-manager"], optional = true }
-deadpool-redis = { version = "0.18", features = ["cluster","rt_tokio_1"] }
+deadpool-redis = { version = "0.18",optional = true, features = ["cluster","rt_tokio_1"] }
 
 [dev-dependencies]
 actix-session = { path = "", features = ["cookie-session", "redis-session"] }
